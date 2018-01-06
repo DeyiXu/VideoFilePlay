@@ -17,11 +17,7 @@
 
   <ItemGroup>
     <Folder Include="Helpers\IO\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\videos\0F8F0154E58FEDDBFABACC35B5020BA6.flv" />
-    <None Include="wwwroot\videos\0F8F0154E58FEDDBFABACC35B5020BA6.mp4" />
+    <Folder Include="wwwroot\videos\" />
   </ItemGroup>
 
 </Project>
