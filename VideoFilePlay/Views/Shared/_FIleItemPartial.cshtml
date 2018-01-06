@@ -1,0 +1,17 @@
+﻿@model FileItemModel
+
+<h3>@Model.Directory.Name</h3>
+<ul>
+    @foreach (var item in Model.ChildFileItemList)
+    {
+        if (item.Files.Length == 0)
+        {
+            continue;
+        }
+        <li>@Html.Partial("_FIleItemPartial", item)</li>
+    }
+    @foreach (var file in Model.Files)
+    {
+        <li><a class="file-item" data-url="@file.FullName.Replace(System.IO.Path.Combine(Environment.CurrentDirectory,@"wwwroot"),"").Replace(@"\","/")" href="javascript:;">@file.Name</a></li>
+    }
+</ul>

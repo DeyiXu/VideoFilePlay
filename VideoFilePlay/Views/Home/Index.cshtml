@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "视频列表";
+}
+@model FileItemModel
+<div class="col-md-3" style="overflow-x: auto;overflow-y: auto;min-height:100%;">
+    <h2>视频列表</h2>
+    @Html.Partial("_FIleItemPartial", Model)
+</div>
+<div class="col-md-9" style="min-height:100%;padding-top:100px;">
+    <!-- prism-player为h5播放器皮肤的钩子类名，请务必加上 -->
+    <div id="J_prismPlayer" class="prism-player"></div>
+</div>
