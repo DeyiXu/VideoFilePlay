@@ -8,6 +8,7 @@ Asp .Net Core 2.0 视频播放器 ，播放功能是Aliplayer
 
 ## 发布
 使用 `dotnet publish -c Release -f netcoreapp2.0 -r win-x64` 可用于非.net core环境下的windows运行
+
 `-r win-x64` 运行时参考 https://docs.microsoft.com/zh-cn/dotnet/core/rid-catalog
 
 
